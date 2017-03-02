@@ -1,3 +1,5 @@
+# <font color='blue'>Roadside Equipment Documentation for Connected Vehicle Dataset</font>
+
 ## Summary
 This document describes the UMTRI Roadside Equipment (RSE) dataset that is available on Flux through Globus Connect. The dataset contains **received** BSMs from vehicles.
 
