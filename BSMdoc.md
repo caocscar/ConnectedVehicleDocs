@@ -18,65 +18,66 @@ Files are organized into folders based on the month and day the trip started. Th
 The total size of the dataset is about 5.4 TB (uncompressed).
 
 ## Variables
-Files **do not** have any column headers. Below is a list of the variable description containing:  
-i) column number  
-ii) column name (based on SQL Server table)  
-iii) column description  
-iv) units  
-
+Files **do not** have any column headers.  
 The **first four columns** represent the composite primary keys for the dataset.  
-1.  RxDevice - receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID [no units]  
-2.  FileId - unique number assigned to each pcap file; [no units]  
-3.  TxDevice - sending Device Id (static 2 bytes of the BSM 4 byte temporary Id) [no units]  
-4.  Gentime - number of microseconds since Jan 1, 2004 [microseconds]  
-5.  TxRandom - random id  (random 2 bytes of the BSM 4 byte temporary Id) [no units]  
-6.  MsgCount - BSM message count [no units]  
-7.  DSecond - number of milliseconds in the current minute [milliseconds]  
-8.  Latitude - GPS latitude position [degrees]  
-9.  Longitude - GPS longitude position [degrees]  
-10. Elevation - GPS elevation [meters]  
-11. Speed - GPS estimated speed [m/s]  
-12. Heading - GPS heading; 0/90/180/270 corresponds respectively to north/east/south/west [degrees]  
-13. Ax - estimated longitudinal acceleration [m/s^2]  
-14. Ay - estimated lateral acceleration [m/s^2]  
-15. Az - estimated vertical acceleration [m/s^2]  
-16. Yawrate - estimated yaw rate; negative/positive values corresponds respectively to left/right turns [deg/s]  
-17. PathCount - number of points in the path history [no units]  
-18. RadiusOfCurve - estimated path prediction value [1/m]  
-19. Confidence - confidence in the path prediction [%]  
+
+Column Number|Name|Description|Units
+---|---|---|---
+1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+2|FileId|unique number assigned to each pcap file|none  
+3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+4|Gentime|number of microseconds since Jan 1, 2004|microseconds  
+5|TxRandom|random id  (random 2 bytes of the BSM 4 byte temporary Id)|none  
+6|MsgCount|BSM message count|none  
+7|DSecond|number of milliseconds in the current minute|milliseconds  
+8|Latitude|GPS latitude position|degrees  
+9|Longitude|GPS longitude position|degrees  
+10|Elevation|GPS elevation|meters  
+11|Speed|GPS estimated speed|meters/second 
+12|Heading|GPS heading; 0/90/180/270 corresponds respectively to north/east/south/west|degrees  
+13|Ax|estimated longitudinal acceleration|meters/second^2  
+14|Ay|estimated lateral acceleration|meters/second^2  
+15|Az|estimated vertical acceleration|meters/second^2  
+16|Yawrate|estimated yaw rate; negative/positive values corresponds respectively to left/right turns|degrees/second
+17|PathCount|number of points in the path history|none
+18|RadiusOfCurve|estimated path prediction value|1/meter  
+19|Confidence|confidence in the path prediction|%  
 
 ## Primary Keys
-These are the primary key(s) for the following items:
-- Vehicle - `RxDevice` column
-- Trip - `RxDevice`, `FileId`, `TxDevice` columns (**Note**: when `RxDevice` == `TxDevice`, the `RxDevice` and `FileId` columns will suffice)
-- BSM - `RxDevice`, `FiledId`, `TxDevice`, `Gentime` columns
+Data|Primary Key(s)|Note
+---|---|---
+Vehicle|`RxDevice`|
+Trip|`RxDevice`, `FileId`, `TxDevice`|when `RxDevice` == `TxDevice`, the `RxDevice` and `FileId` columns will suffice
+BSM|`RxDevice`, `FiledId`, `TxDevice`, `Gentime`|
 
 ## Metadata
-_umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. Each row represents one trip.
-The metadata file does have column headers. Below is a list of the variable description containing:  
-i) column number  
-ii) column name  
-iii) column description  
-iv) units
-
+_umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. 
+Each row represents one trip.
+The metadata file does have column headers. 
 **RxDevice, fileId, TxDevice** represent the composite primary keys for the metadata.  
-1.  TripStart - number of days since Dec. 30, 1899; folder where the trip can be found  [days]  
-2.  fileNum - file number where the trip can be found [no units]  
-3.  RxDevice - receiving Device Id (For VADs this is the same as TxDevice) [no units]  
-4.  fileId - unique number assigned to each pcap file [no units]  
-5.  TxDevice - sending Device Id (static 2 bytes of the BSM 4 byte temporary Id) [no units]  
-6.  firstLatitude - GPS Latitude Position of first BSM in the trip [degrees]  
-7.  firstLongitude - GPS Longitude Position of first BSM in the trip [degrees]  
-8.  lastLatitude - GPS Latitude Position of last BSM in the trip [degrees]  
-9.  lastLongitude - GPS Longitude Position of last BSM in the trip [degrees]  
-10. firstSpeed - GPS estimated speed of first BSM in the trip [mph]  
-11. lastSpeed - GPS estimated speed of last BSM in the trip [mph]  
-12. maxSpeed - maximum GPS estimated speed during trip [mph]  
-13. avgSpeed - mean GPS estimated speed during trip [mph]  
-14. avgSpeed_pts_gte_1mph - mean GPS estimated speed during trip while vehicle was moving faster than 1mph [mph]  
-15. firstTime - timestamp of first BSM in the trip [datetime]  
-16. lastTime - timestamp of last BSM in the trip [datetime]  
-17. duration - time duration of the trip; omits time jumps greater than 1 second from calculation [min]  
-18. distance - travelled distance of the trip; based on vehicle speed; omits time jumps greater than 1 second from calculation [km]  
-19. bsmCount - number of basic safety messages (equivalent to rows) in the trip [no units]  
-20. deltaTmax - maximum time between consecutive timestamps; can be thought of as a measure of data quality; ideally it would be 0.100 seconds [s]  
+
+Column Number|Name|Description|Units
+---|---|---|---
+1|TripStart|number of days since Dec. 30, 1899; folder where the trip can be found|days  
+2|fileNum|file number where the trip can be found|none  
+3|RxDevice|receiving Device Id (For VADs this is the same as TxDevice)|none  
+4|fileId|unique number assigned to each pcap file|none  
+5|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+6|firstLatitude|GPS Latitude Position of first BSM in the trip|degrees  
+7|firstLongitude|GPS Longitude Position of first BSM in the trip|degrees  
+8|lastLatitude|GPS Latitude Position of last BSM in the trip|degrees  
+9|lastLongitude|GPS Longitude Position of last BSM in the trip|degrees  
+10|firstSpeed|GPS estimated speed of first BSM in the trip|mph  
+11|lastSpeed|GPS estimated speed of last BSM in the trip|mph  
+12|maxSpeed|maximum GPS estimated speed during trip|mph  
+13|avgSpeed|mean GPS estimated speed during trip|mph  
+14|avgSpeed_pts_gte_1mph|mean GPS estimated speed during trip while vehicle was moving faster than 1mph|mph  
+15|firstTime|timestamp of first BSM in the trip|datetime  
+16|lastTime|timestamp of last BSM in the trip|datetime  
+17|duration|time duration of the trip; omits time jumps greater than 1 second from calculation|minutes
+18|distance|travelled distance of the trip; based on vehicle speed; omits time jumps greater than 1 second from calculation|kilometers  
+19|bsmCount|number of basic safety messages (equivalent to rows) in the trip|none  
+20|deltaTmax|maximum time between consecutive timestamps; can be thought of as a measure of data quality; ideally it would be 0.100 seconds|seconds  
+
+## Coordinate Reference System
+GPS coordinates are in WGS84 or EPSG:4326
