@@ -60,7 +60,7 @@ iii) column description
 iv) units
 
 **RxDevice, fileId, TxDevice** represent the composite primary keys for the metadata.  
-1.  TripStart - number of days since Dec. 30, 1899; folder where the trip can be found  [no units]  
+1.  TripStart - number of days since Dec. 30, 1899; folder where the trip can be found  [days]  
 2.  fileNum - file number where the trip can be found [no units]  
 3.  RxDevice - receiving Device Id (For VADs this is the same as TxDevice) [no units]  
 4.  fileId - unique number assigned to each pcap file [no units]  
