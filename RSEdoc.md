@@ -1,4 +1,4 @@
-# <font color='blue'>Roadside Equipment Documentation for Connected Vehicle Dataset</font>
+# Roadside Equipment Documentation for Connected Vehicle Dataset
 
 ## Summary
 This document describes the UMTRI Roadside Equipment (RSE) dataset that is available on Flux through Globus Connect. The dataset contains **received** BSMs from vehicles.
@@ -24,7 +24,6 @@ The total size of the dataset is about 444 GB (uncompressed).
 Files **do not** have any column headers.  
 The **first four columns** represent the primary keys for the dataset.  
 The rest of the columns should be identical to the same message in the BSM dataset.  
-**Note**: GPS coordinates are in WGS84 or EPSG:4326. 
 
 Column Number|Name|Description|Units
 ---|---|---|---
@@ -72,3 +71,7 @@ Column Number|Name|Description|Units
 16|distance|travelled distance during V2I; based on vehicle speed; omits time jumps greater than 1 second from calculation|meters
 17|bsmCount|number of basic safety messages (equivalent to rows) during V2I|none
 18|deltaTmax|maximum time between consecutive timestamps; can be thought of as a measure of data quality; ideally it would be 0.100 seconds|seconds
+
+## Coordinate Reference System
+GPS coordinates are in WGS84 or EPSG:4326
+
