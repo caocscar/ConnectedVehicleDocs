@@ -11,8 +11,8 @@ The dataset has been filtered according to the following guidelines:
 ## File Content Description
 Each file contains data from 55 or fewer trips. Trips (and thus files) within a directory are pseudo-sorted by `RxDevice` then by `FileId`.
 
-## Naming Convention
-Files are organized into directories based on the month and day the trip started. The top level folder(s) is named `TripStart\bsm`. The Year-Month sub-directories are labeled `YYYYMM`. The Day sub-directories are labeled `TripStart_4####` where `4####` represents the number of days since Dec. 30, 1899. For example, TripStart_41092 represents July 2, 2012. Within each directory, are csv files labeled `TripStart_4####_p???` where `4####` represents the same as above and `???` represents the part file number for that day. 
+## Folder/File Naming Convention
+Files are organized into folders based on the month and day the trip started. The top level folder(s) is named `TripStart\bsm`. The Year-Month sub-folders are labeled `YYYYMM`. The Day sub-folders are labeled `TripStart_4####` where `4####` represents the number of days since Dec. 30, 1899. For example, TripStart_41092 represents July 2, 2012. Within each folder, are csv files labeled `TripStart_4####_p???` where `4####` represents the same as above and `???` represents the part file number for that day. 
 
 ## Data Size
 The total size of the dataset is about 5.4 TB (uncompressed).
