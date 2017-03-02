@@ -12,6 +12,8 @@ The dataset has been filtered according to the following guidelines:
 **Note**: Due to rounding of datetimes in the metadata, there will be some V2I BSM messages that fall outside the BSM dataset by a second or less.
 
 ## File Content Description
+Files are comma delimited.  
+Files **do not** have any column headers.  
 Each file contains all V2I for that TripStart day.
 
 ## Folder/File Naming Convention
@@ -21,7 +23,6 @@ Files are organized into folders based on the month and day the V2I occurred. Th
 The total size of the dataset is about 444 GB (uncompressed).
 
 ## Variables
-Files **do not** have any column headers.  
 The **first four columns** represent the primary keys for the dataset.  
 The rest of the columns should be identical to the same message in the BSM dataset.  
 
