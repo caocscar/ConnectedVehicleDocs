@@ -27,7 +27,7 @@ The **first four columns** represent the primary keys for the dataset.
 The rest of the columns should be identical to the same message in the BSM dataset.  
 
 Column Number|Name|Description|Units
----|---|---|---
+:---:|---|---|---
 1|RxDevice|receiving Device Id of the RSE|none  
 2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
 3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none
@@ -53,7 +53,7 @@ Column Number|Name|Description|Units
 The metadata file does have column headers.
 
 Column Number|Name|Description|Units
----|---|---|---
+:---:|---|---|---
 1|TripStart|number of days since Dec. 30, 1899; day where the V2I messages can be found|days
 2|RxDevice|receiving Device Id of the RSE|none
 3|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
