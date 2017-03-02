@@ -24,7 +24,7 @@ The total size of the dataset is about 5.4 TB (uncompressed).
 The **first four columns** represent the composite primary keys for the dataset.  
 
 Column Number|Name|Description|Units
----|---|---|---
+:---:|---|---|---
 1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
 2|FileId|unique number assigned to each pcap file|none  
 3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
@@ -59,7 +59,7 @@ The metadata file does have column headers.
 **RxDevice, fileId, TxDevice** represent the composite primary keys for the metadata.  
 
 Column Number|Name|Description|Units
----|---|---|---
+:---:|---|---|---
 1|TripStart|number of days since Dec. 30, 1899; folder where the trip can be found|days  
 2|fileNum|file number where the trip can be found|none  
 3|RxDevice|receiving Device Id (For VADs this is the same as TxDevice)|none  
