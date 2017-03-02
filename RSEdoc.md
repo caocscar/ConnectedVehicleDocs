@@ -24,7 +24,7 @@ The total size of the dataset is about 444 GB (uncompressed).
 Files **do not** have any column headers.  
 The **first four columns** represent the primary keys for the dataset.  
 The rest of the columns should be identical to the same message in the BSM dataset.  
-GPS coordinates are in WGS84 or EPSG:4326. 
+**Note**: GPS coordinates are in WGS84 or EPSG:4326. 
 
 Column Number|Name|Description|Units
 ---|---|---|---
