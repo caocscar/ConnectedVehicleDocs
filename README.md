@@ -47,9 +47,9 @@ The **first four columns** represent the composite primary keys for the dataset.
 
 ## Primary Keys
 These are the primary key(s) for the following items:
-- Vehicle - RxDevice column
-- Trip - RxDevice, FileId, TxDevice columns (**Note**: when RxDevice == TxDevice, the RxDevice and FileId columns will suffice)
-- BSM - RxDevice, FiledId, TxDevice, Gentime columns
+- Vehicle - `RxDevice` column
+- Trip - `RxDevice`, `FileId`, `TxDevice` columns (**Note**: when `RxDevice` == `TxDevice`, the `RxDevice` and `FileId` columns will suffice)
+- BSM - `RxDevice`, `FiledId`, `TxDevice`, `Gentime` columns
 
 ## Metadata
 _umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. Each row represents one trip.
