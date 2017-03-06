@@ -49,8 +49,8 @@ Column Number|Name|Description|Units
 Data|Primary Key(s)|Note
 ---|---|---
 Vehicle|`RxDevice`|
-Trip|`RxDevice`, `FileId`, `TxDevice`|when `RxDevice` == `TxDevice`, the `RxDevice` and `FileId` columns will suffice
-BSM|`RxDevice`, `FiledId`, `TxDevice`, `Gentime`|
+Trip|`RxDevice`, `FileId`, `TxDevice`|In the majority of trips where `RxDevice` == `TxDevice` (~96% of trips), the `RxDevice` and `FileId` columns will suffice or equivalently `TxDevice` and `FileId`.
+BSM|`RxDevice`, `FiledId`, `TxDevice`, `Gentime`|In the majority of trips where `RxDevice` == `TxDevice` (~96% of trips), the `RxDevice, FileId, Gentime` columns will suffice or equivalently `TxDevice, FileId, Gentime`.
 
 ## Metadata
 _umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. 
