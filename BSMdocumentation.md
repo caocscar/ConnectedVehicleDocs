@@ -3,6 +3,17 @@
 ## Summary
 This document describes the UMTRI Basic Safety Message (BSM) filtered dataset that is available on Flux through Globus Connect. The data represents the BSMs that are **transmitted** by each vehicle in the dataset.
 
+Category|Value
+---|---
+Vehicles|3,281\*
+Trips|4,643,842
+Total travel distance|36.5 million km
+Total time duration|49,886 days
+Number of BSMs|43.1 billion
+Date Range|2012-07-02 to 2016-10-03
+
+\*Number of vehicles that was deployed over the date range. Not necessarily what was deployed all at once.
+
 ## Data Filtering
 The dataset has been filtered according to the following guidelines:  
 1. A random portion (between 3-8%) of each trip has been removed from the beginning and end of each trip.  
