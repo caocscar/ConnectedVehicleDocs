@@ -3,6 +3,13 @@
 ## Summary
 This document describes the UMTRI Roadside Equipment (RSE) dataset that is available on Flux through Globus Connect. The dataset contains **received** BSMs from vehicles.
 
+Category|Value
+---|---
+Number of RSE units|29
+Number of V2I interactions|6,375,343
+Number of BSMs|3.5 billion
+Date Range|2012-08-08 to 2016-10-03
+
 ## Roadside Equipment
 _RseDevice.csv_ contains the location and description of each RSE.
 
