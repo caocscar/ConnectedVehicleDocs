@@ -31,7 +31,7 @@ The **first four columns** represent the composite primary keys for the dataset.
 
 Column Number|Rx/Tx Vehicle|Name|Description|Units
 :---:|:---:|---|---|---
-1|Rx|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+1|Rx|RxDevice|receiving Device Id; equivalent to VehicleID|none  
 2|Rx|FileId|unique number assigned to each pcap file|none  
 3|Tx|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
 4|Tx|Gentime|number of microseconds since Jan 1, 2004|microseconds  
