@@ -76,7 +76,7 @@ Column Number|Name|Description|Units
 13|firstTime|timestamp of first BSM during V2I|datetime
 14|lastTime|timestamp of last BSM during V2I|datetime
 15|duration|time duration of V2I; omits time jumps greater than 1 second from calculation|seconds
-16|distance|travelled distance during V2I; based on vehicle speed; omits time jumps greater than 1 second from calculation|meters
+16|distance|travelled distance during V2I; based on vehicle speed; omits time jumps greater than 1 second from calculation|feet
 17|bsmCount|number of basic safety messages (equivalent to rows) during V2I|none
 18|deltaTmax|maximum time between consecutive timestamps; can be thought of as a measure of data quality; ideally it would be 0.100 seconds|seconds
 
