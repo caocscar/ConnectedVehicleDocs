@@ -88,7 +88,7 @@ Column Number|Name|Description|Units
 15|firstTime|timestamp of first BSM in the trip|datetime  
 16|lastTime|timestamp of last BSM in the trip|datetime  
 17|duration|time duration of the trip; omits time jumps greater than 1 second from calculation|minutes
-18|distance|travelled distance of the trip; based on vehicle speed; omits time jumps greater than 1 second from calculation|kilometers  
+18|distance|travelled distance of the trip; based on vehicle speed; omits time jumps greater than 1 second from calculation|miles  
 19|bsmCount|number of basic safety messages (equivalent to rows) in the trip|none  
 20|deltaTmax|maximum time between consecutive timestamps; can be thought of as a measure of data quality; ideally it would be 0.100 seconds|seconds  
 
