@@ -31,29 +31,29 @@ The total size of the dataset is about 444 GB (uncompressed).
 
 ## Variables
 The **first four columns** represent the primary keys for the dataset.  
-The rest of the columns should be identical to the same message in the BSM dataset.  
+The Tx columns should be identical to the same message in the BSM dataset.
 
-Column Number|Name|Description|Units
-:---:|---|---|---
-1|RxDevice|receiving Device Id of the RSE|none  
-2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
-3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none
-4|Gentime|number of microseconds since Jan 1, 2004|microseconds  
-5|TxRandom|random id  (random 2 bytes of the BSM 4 byte temporary Id)|none
-6|MsgCount|BSM message count|none
-7|DSecond|number of milliseconds in the current minute|milliseconds
-8|Latitude|GPS latitude position|degrees  
-9|Longitude|GPS longitude position|degrees  
-10|Elevation|GPS elevation|meters  
-11|Speed|GPS estimated speed|meters/second  
-12|Heading|GPS heading; 0/90/180/270 corresponds respectively to north/east/south/west|degrees
-13|Ax|estimated longitudinal acceleration|meters/second^2  
-14|Ay|estimated lateral acceleration|meters/second^2 
-15|Az|estimated vertical acceleration|meters/second^2  
-16|Yawrate|estimated yaw rate; negative/positive values corresponds respectively to left/right turns|degrees/second
-17|PathCount|number of points in the path history|none  
-18|RadiusOfCurve|estimated path prediction value|1/meter
-19|Confidence|confidence in the path prediction|%  
+Column Number|Rx/Tx Device|Name|Description|Units
+:---:|:---:|---|---|---
+1|Rx|RxDevice|receiving Device Id of the RSE|none  
+2|Rx|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
+3|Tx|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none
+4|Tx|Gentime|number of microseconds since Jan 1, 2004|microseconds  
+5|Tx|TxRandom|random id  (random 2 bytes of the BSM 4 byte temporary Id)|none
+6|Tx|MsgCount|BSM message count|none
+7|Tx|DSecond|number of milliseconds in the current minute|milliseconds
+8|Tx|Latitude|GPS latitude position|degrees  
+9|Tx|Longitude|GPS longitude position|degrees  
+10|Tx|Elevation|GPS elevation|meters  
+11|Tx|Speed|GPS estimated speed|meters/second  
+12|Tx|Heading|GPS heading; 0/90/180/270 corresponds respectively to north/east/south/west|degrees
+13|Tx|Ax|estimated longitudinal acceleration|meters/second^2  
+14|Tx|Ay|estimated lateral acceleration|meters/second^2 
+15|Tx|Az|estimated vertical acceleration|meters/second^2  
+16|Tx|Yawrate|estimated yaw rate; negative/positive values corresponds respectively to left/right turns|degrees/second
+17|Tx|PathCount|number of points in the path history|none  
+18|Tx|RadiusOfCurve|estimated path prediction value|1/meter
+19|Tx|Confidence|confidence in the path prediction|%  
 
 # Metadata
 *umtri_rse_metadata.csv* is a file containing some summary statistics for each V2I interaction.
