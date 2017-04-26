@@ -76,10 +76,10 @@ Column Number|Name|Description|Units
 3|RxDevice|receiving Device Id (For VADs this is the same as TxDevice)|none  
 4|fileId|unique number assigned to each pcap file|none  
 5|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
-6|firstLatitude|GPS Latitude Position of first BSM in the trip|degrees  
-7|firstLongitude|GPS Longitude Position of first BSM in the trip|degrees  
-8|lastLatitude|GPS Latitude Position of last BSM in the trip|degrees  
-9|lastLongitude|GPS Longitude Position of last BSM in the trip|degrees  
+6|firstLatitude|GPS latitude position of first BSM in the trip|degrees  
+7|firstLongitude|GPS longitude position of first BSM in the trip|degrees  
+8|lastLatitude|GPS latitude position of last BSM in the trip|degrees  
+9|lastLongitude|GPS longitude position of last BSM in the trip|degrees  
 10|firstSpeed|GPS estimated speed of first BSM in the trip|mph  
 11|lastSpeed|GPS estimated speed of last BSM in the trip|mph  
 12|maxSpeed|maximum GPS estimated speed during trip|mph  
