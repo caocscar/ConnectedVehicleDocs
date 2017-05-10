@@ -7,7 +7,8 @@ The data represents the BSMs that are **received** by vehicles that have Rx capa
 Category|Value
 ---|---
 Rx Vehicles|136
-Rx BSMs|462161
+Number of V2V interactions|462,161
+Number of Rx BSMs|68,574,994
 Date Range|2012-09-20 to 2015-03-29
 
 ## Data Filtering
@@ -20,11 +21,10 @@ Files **do not** have any column headers.
 Each file contains all the Rx BSMs on a given day (i.e. TripStart).  
 
 ## Folder/File Naming Convention
-Files are organized into folders based on the month and day the trip started. The top level folder(s) is named `TripStart\bsmRx`. The Year-Month sub-folders are labeled `YYYYMM`. 
-The files are labeled `TripStart_bsmrx_4####.csv` where `4####` represents the number of days since Dec. 30, 1899.  For example, `TripStart_bsmrx_41172.csv` represents Sep. 20, 2012. 
+Files are organized into folders based on the month the trip occurred. The top level folder(s) is named `TripStart\bsmRx`. The Year-Month sub-folders are labeled `YYYYMM`. The files are labeled `TripStart_bsmrx_4####.csv` where `4####` represents the number of days since Dec. 30, 1899.  For example, `TripStart_bsmrx_41172.csv` represents Sep. 20, 2012. 
 
 ## Data Size
-The total size of the dataset is about 10 GB (uncompressed).
+The total size of the dataset is about 9 GB (uncompressed).
 
 ## Variables
 The **first four columns** represent the composite primary keys for the dataset.  
@@ -108,7 +108,7 @@ Column Number|Rx/Tx Vehicle|Name|Description|Units
 43||firstDistBtwVeh<sup>*</sup>|great-circle distance between the two vehicles of first BSMs|feet
 44||lastDistBtwVeh<sup>*</sup>|great-circle distance between the two vehicles of last BSMs|feet
 
-<sup>*</sup>These field can have null values. If null, it indicates that no bsm was found for that RxDevice between the firstTime-0.1s and lastTime+0.1s.
+<sup>*</sup>These fields can have null values. If null, it indicates that no bsm was found for that RxDevice between the firstTime-0.1s and lastTime+0.1s. Other dependent fields like duration, distance and deltaTmax have been set to 0 in this case.
 
 ## Coordinate Reference System
 GPS coordinates are in WGS84 or EPSG:4326
