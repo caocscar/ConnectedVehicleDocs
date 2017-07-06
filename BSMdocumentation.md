@@ -53,7 +53,7 @@ Column Number|Name|Description|Units
 15|Az|estimated vertical acceleration|meters/second^2  
 16|Yawrate|estimated yaw rate; negative/positive values corresponds respectively to left/right turns|degrees/second
 17|PathCount|number of points in the path history|none
-18|RadiusOfCurve|estimated path prediction value|1/meter  
+18|RadiusOfCurve|estimated path prediction value (curvature)|1/meter  
 19|Confidence|confidence in the path prediction|%  
 
 ## Primary Keys
