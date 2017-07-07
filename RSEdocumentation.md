@@ -38,7 +38,7 @@ Column Number|Rx/Tx Device|Name|Description|Units
 1|Rx|RxDevice|receiving Device Id of the RSE|none  
 2|Rx|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
 3|Tx|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none
-4|Tx|Gentime|number of microseconds since Jan 1, 2004|microseconds  
+4|Tx|Gentime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
 5|Tx|TxRandom|random id  (random 2 bytes of the BSM 4 byte temporary Id)|none
 6|Tx|MsgCount|BSM message count|none
 7|Tx|DSecond|number of milliseconds in the current minute|milliseconds
