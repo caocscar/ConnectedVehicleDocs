@@ -63,6 +63,18 @@ Vehicle|`RxDevice`|
 Trip|`RxDevice`, `FileId`, `TxDevice`|In the majority of trips where `RxDevice` == `TxDevice` (~96% of trips), the `RxDevice` and `FileId` columns will suffice or equivalently `TxDevice` and `FileId`.
 BSM|`RxDevice`, `FiledId`, `TxDevice`, `Gentime`|In the majority of trips where `RxDevice` == `TxDevice` (~96% of trips), the `RxDevice, FileId, Gentime` columns will suffice or equivalently `TxDevice, FileId, Gentime`.
 
+## BSM Data Visualization
+These data viz have been constructed using the metadata file mentioned below.
+
+### Calendar Heat Map
+An interactive calendar of the data available in the BSM transmitted dataset  
+- [Number of Vehicles per calendar day](https://bl.ocks.org/depechecode/raw/291ec987d9012e801eebc2a811f3f457/)  
+- [Number of Trips per calendar day](https://bl.ocks.org/depechecode/raw/8e5bf1c3173161896413bdc340915bae/)
+
+### Choropleth Map
+An interactive choropleth web map of   
+- [Trip Origins](https://sicunchen.github.io/mapbox-gl-d3-choropleth/)
+
 ## Metadata
 _umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. 
 Each row represents one trip.
