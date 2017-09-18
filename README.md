@@ -5,3 +5,4 @@ BSMdocumentation.md|Documentation for transmitted Basic Safety Message (BSM) dat
 BSMRxdocumentation.md|Documentation for received (Rx) Basic Safety Message (BSM) dataset
 RSEdocumentation.md|Documentation for Roadside Equipment (RSE) dataset
 PlymouthIntersections.md|Documentation for Plymouth Intersection Data Nugget
+StopSignIntersections.md|Documentation for Stop Sign Intersection Data Nugget
