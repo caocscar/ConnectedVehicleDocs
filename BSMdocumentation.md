@@ -1,4 +1,4 @@
-# <font color='blue'>Basic Safety Message Documentation for Connected Vehicle Dataset</font>
+# Basic Safety Message Documentation for Connected Vehicle Dataset
 
 ## Summary
 This document describes the UMTRI Basic Safety Message (BSM) filtered dataset that is available on Flux through Globus Connect. The data represents the BSMs that are **transmitted** by each vehicle in the dataset.
@@ -16,8 +16,8 @@ Date Range|2012-07-02 to 2016-10-03
 
 ## Data Filtering
 The dataset has been filtered according to the following guidelines:  
-1. A random portion (between 3-8%) of each trip has been removed from the beginning and end of each trip.  
-2. Trips that are less than 2 minutes OR 1 kilometer have been removed.
+1. A random portion (less than 8%) of each trip has been removed from the beginning and end of each trip.  
+2. Trips that are less than a specified time or distance have been removed.
 
 ## File Content Description
 Each file is comma delimited.  
