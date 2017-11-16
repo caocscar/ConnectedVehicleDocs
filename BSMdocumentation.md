@@ -68,8 +68,7 @@ These data viz have been constructed using the metadata file mentioned below.
 
 ### Calendar Heat Map
 An interactive calendar of the data available in the BSM transmitted dataset  
-- [Number of Vehicles per calendar day](https://bl.ocks.org/depechecode/raw/291ec987d9012e801eebc2a811f3f457/)  
-- [Number of Trips per calendar day](https://bl.ocks.org/depechecode/raw/8e5bf1c3173161896413bdc340915bae/)
+- [Number of Vehicles or Trips per calendar day](http://www-personal.umich.edu/~scunchen/Mcity/yearly_heatmap/)  
 
 ### Choropleth Map
 An interactive choropleth web map of   
