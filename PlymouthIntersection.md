@@ -60,3 +60,6 @@ The total size of the dataset is about 80 MB (uncompressed).
 
 ## Data Format
 The data format is the same as it is for the BSM, RSE, BSMRx dataset since it is extracted from there.
+
+## Video Information
+The AVIs use the DivX codec. If you are having trouble playing the video, I was able to get it working with the [VLC media player](https://www.videolan.org/index.html)
