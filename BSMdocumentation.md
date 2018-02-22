@@ -72,7 +72,7 @@ An interactive calendar of the data available in the BSM transmitted dataset
 
 ### Choropleth Map
 An interactive choropleth web map of   
-- [Trip Origins](https://sicunchen.github.io/mapbox-gl-d3-choropleth/)
+- [Trip Origins](http://liachen.me/bsm_choropleth/)
 
 ## Metadata
 _umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. 
