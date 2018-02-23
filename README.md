@@ -1,12 +1,12 @@
 # Summary of Documentation Files
 ## Main Datasets
-[Documentation for transmitted (Tx) Basic Safety Message (BSM) dataset](BSMdocumentation.md)  
-[Documentation for received (Rx) Basic Safety Message (BSM) dataset](BSMRxdocumentation.md)  
-[Documentation for Roadside Equipment (RSE) dataset](RSEdocumentation.md)
+[Documentation for transmitted (Tx) Basic Safety Message (BSM)](BSMdocumentation.md)  
+[Documentation for received (Rx) Basic Safety Message (BSM)](BSMRxdocumentation.md)  
+[Documentation for Roadside Equipment (RSE)](RSEdocumentation.md)
 
 ## Data Nuggets
-[Documentation for Plymouth Intersection Data Nugget](PlymouthIntersections.md)
-[Documentation for Stop Sign Intersection Data Nugget](StopSignIntersections.md)
+[Documentation for Plymouth Intersection](PlymouthIntersections.md)  
+[Documentation for Stop Sign Intersection](StopSignIntersections.md)  
 The remaining data nuggets should have documentation within the folder itself
 
 # Citation
