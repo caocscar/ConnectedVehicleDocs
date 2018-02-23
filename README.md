@@ -1,6 +1,6 @@
 # Summary of Documentation Files
 ## Main Datasets
-[Documentation for transmitted (Tx) Basic Safety Message (BSM)](BSMdocumentation.md)  
+[Documentation for transmitted Basic Safety Message (BSM)](BSMdocumentation.md)  
 [Documentation for received (Rx) Basic Safety Message (BSM)](BSMRxdocumentation.md)  
 [Documentation for Roadside Equipment (RSE)](RSEdocumentation.md)
 
