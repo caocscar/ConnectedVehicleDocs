@@ -59,7 +59,7 @@ V2V Interaction|`RxDevice`, `FileId`, `TxDevice`|
 BSM|`RxDevice`, `FiledId`, `TxDevice`, `Gentime`|
 
 ## Metadata
-**umtri_bsmrx_metadata.csv** is a file containing some summary statistics for each V2V interaction. Each row represents one V2V interaction. The metadata file does have column headers. 
+**umtri_bsmrx_metadata.csv** is a file containing some summary statistics for each V2V interaction. The metadata file does have column headers. 
 
 Column Number|Rx/Tx Vehicle|Name|Description|Units
 :---:|:---:|---|---|---
