@@ -4,6 +4,8 @@
 [Documentation for received (Rx) Basic Safety Message (BSM)](BSMRxdocumentation.md)  
 [Documentation for Roadside Equipment (RSE)](RSEdocumentation.md)
 
+A high-level look of the variables in these dataset is available [here](http://www-personal.umich.edu/~scunchen/Mcity/tree/).
+
 ## Data Nuggets
 [Documentation for Plymouth Intersection](PlymouthIntersections.md)  
 [Documentation for Stop Sign Intersection](StopSignIntersections.md)  
