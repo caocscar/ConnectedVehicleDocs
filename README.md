@@ -7,8 +7,8 @@
 A high-level look of the variables in these dataset is available [here](http://www-personal.umich.edu/~scunchen/Mcity/tree/).
 
 ## Data Nuggets
-[Documentation for Plymouth Intersection](PlymouthIntersections.md)  
-[Documentation for Stop Sign Intersection](StopSignIntersections.md)  
+[Documentation for Plymouth Intersection](PlymouthIntersection.md)  
+[Documentation for Stop Sign Intersection](StopSignIntersection.md)  
 The remaining data nuggets should have documentation within the folder itself
 
 # Citation
