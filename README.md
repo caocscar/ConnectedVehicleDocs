@@ -11,7 +11,7 @@ A high-level look of the variables in these dataset is available [here](http://w
 [Documentation for Stop Sign Intersection](StopSignIntersection.md)  
 The remaining data nuggets should have documentation within the folder itself
 
-## Example Code
+## Example BSM Code
 This github page has some example Python code for analysis in a Jupyter Notebook.  
 https://github.com/mcity/BSMexamplecode
 
