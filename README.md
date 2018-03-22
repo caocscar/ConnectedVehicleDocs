@@ -11,6 +11,12 @@ A high-level look of the variables in these dataset is available [here](http://w
 [Documentation for Stop Sign Intersection](StopSignIntersection.md)  
 The remaining data nuggets should have documentation within the folder itself
 
+## Example Code
+This github page has some example Python code for analysis in a Jupyter Notebook.  
+https://github.com/mcity/BSMexamplecode
+
+**Note:** The external files (dependencies) are not included as part of the repository. The examples are meant to be illustrative and not necessarily reproducible. That could change if there are requests to do so.
+
 # Citation
 If you would like to cite the dataset provided, here is one suggestion:  
 > The dataset contained de-identified Basic Safety Messages (BSM) collected from vehicles equipped with Dedicated Short Range Communication (DSRC) during the Connected Vehicle Safety Pilot Model Deployment program (Bezzina, D., & Sayer, J., 2015).
