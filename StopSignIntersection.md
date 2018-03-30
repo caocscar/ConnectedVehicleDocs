@@ -1,4 +1,6 @@
-# Intersection Queries for Safety Pilot Data
+# Stop Sign Intersection Data Nugget Documentation
+
+## Intersection Queries for Safety Pilot Data
 
 The goal of this query was to pull data to analyze the behavior of drivers approaching stop sign-controlled intersections.
 The following intersections were picked from the Safety Pilot study area:
