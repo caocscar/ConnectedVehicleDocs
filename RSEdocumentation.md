@@ -1,5 +1,16 @@
 # Roadside Equipment Documentation for Connected Vehicle Dataset
 
+## Table of Contents
+- [Summary](#summary)
+- [Roadside Equipment](#roadside-equipment)
+- [Data Filtering](#data-filtering)
+- [File Content Description](#file-content-description)
+- [Folder/File Naming Convention](#folder-and-file-naming-convention)
+- [Data Size](#data-size)
+- [Variables](#variables)
+- [Metadata](#metadata)
+- [Coordinate Reference System](#coordinate-reference-system)
+
 ## Summary
 This document describes the UMTRI Roadside Equipment (RSE) dataset that is available on Flux through Globus Connect. The dataset contains **received** BSMs from vehicles.
 
@@ -23,7 +34,7 @@ Each file is comma delimited.
 Files **do not** have any column headers.  
 Each file contains all V2I for that TripStart day.
 
-## Folder/File Naming Convention
+## Folder and File Naming Convention
 Files are organized into folders based on the month and day the V2I occurred. The top level folder(s) is named `TripStart\rse`. The Year-Month sub-folders are labeled `YYYYMM`. The Day files are labeled `TripStart_4####` where `4####` represents the number of days since Dec. 30, 1899. For example, TripStart_41092 represents July 2, 2012. 
 
 ## Data Size
