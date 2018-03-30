@@ -1,4 +1,12 @@
-# <font color='blue'>Plymouth Intersection Data Nugget Documentation</font>
+# Plymouth Intersection Data Nugget Documentation
+
+## Table of Contents
+- [Summary](#summary)
+- [Event Identification](#event-identification)
+- [Folder/File Naming Convention](#folder-and-file-naming-convention)
+- [Data Size](#data-size)
+- [Data Format](#data-format)
+- [Video Information](#video-information)
 
 ## Summary
 This document describes the Plymouth Intersection dataset that is available on Flux through Globus Connect. 
@@ -21,7 +29,7 @@ Events end approximately when vehicle 1 finishes passing through intersection.
 
 This data nuggets contains **51** events identified at Plymouth road Intersections.
 
-## Folder/File Naming Convention
+## Folder and File Naming Convention
 Files are organized into folders based on a single event.  
 The top level folder(s) is named `TripStart/datanuggets/PlymouthIntersections/intersectionEvents`.  
 The folder name format is `event_rseId_vehicle1Id_vehicle1TripId_StartTime_EndTime`.  
