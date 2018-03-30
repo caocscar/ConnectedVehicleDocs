@@ -1,4 +1,15 @@
-# <font color='blue'>Received (Rx) Basic Safety Message Documentation for Connected Vehicle Dataset</font>
+# Received (Rx) Basic Safety Message Documentation for Connected Vehicle Dataset
+
+## Table of Contents
+- [Summary](#summary)
+- [Data Filtering](#data-filtering)
+- [File Content Description](#file-content-description)
+- [Folder/File Naming Convention](#folder-and-file-naming-convention)
+- [Data Size](#data-size)
+- [Variables](#variables)
+- [Primary Keys](#primary-keys)
+- [Metadata](#metadata)
+- [Coordinate Reference System](#coordinate-reference-system)
 
 ## Summary
 This document describes the UMTRI Received Basic Safety Message (BSM) filtered dataset that is available on Flux through Globus Connect.
