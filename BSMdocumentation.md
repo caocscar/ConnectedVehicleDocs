@@ -1,5 +1,19 @@
 # Basic Safety Message Documentation for Connected Vehicle Dataset
 
+## Table of Contents
+- [Summary](#summary)
+- [Data Filtering](#data-filtering)
+- [File Content Description](#file-content-description)
+- [Folder/File Naming Convention](#folder-and-file-naming-convention)
+- [Data Size](#data-size)
+- [Variables](#variables)
+- [Primary Keys](#primary-keys)
+- [Data Visualization](#bsm-data-visualization)
+  - [Calendar Heat Map](#calendar-heat-map)
+  - [Choropleth Map](#choropleth-map)
+- [Metadata](#metadata)
+- [Coordinate Reference System](#coordinate-reference-system)
+
 ## Summary
 This document describes the UMTRI Basic Safety Message (BSM) filtered dataset that is available on Flux through Globus Connect. The data represents the BSMs that are **transmitted** by each vehicle in the dataset.
 
@@ -25,7 +39,7 @@ Files **do not** have any column headers.
 Each file contains data from 55 or fewer trips.  
 Trips (and thus files) within a directory are pseudo-sorted by `RxDevice` then by `FileId`.
 
-## Folder/File Naming Convention
+## Folder and File Naming Convention
 Files are organized into folders based on the month and day the trip started. The top level folder(s) is named `TripStart\bsm`. The Year-Month sub-folders are labeled `YYYYMM`. The Day sub-folders are labeled `TripStart_4####` where `4####` represents the number of days since Dec. 30, 1899. For example, TripStart_41092 represents July 2, 2012. Within each folder, are csv files labeled `TripStart_4####_p???` where `4####` represents the same as above and `???` represents the part file number for that day. 
 
 ## Data Size
@@ -68,11 +82,12 @@ These data viz have been constructed using the metadata file mentioned below.
 
 ### Calendar Heat Map
 An interactive calendar of the data available in the BSM transmitted dataset  
-- [Number of Vehicles or Trips per calendar day](http://www-personal.umich.edu/~scunchen/Mcity/yearly_heatmap/)  
+- [Number of Vehicles or Trips per calendar day](http://www-personal.umich.edu/~scunchen/Mcity/yearly_heatmap/) 
+- [Number of Trips per hour per week](http://www-personal.umich.edu/~scunchen/Mcity/hourly_heatmap/) (June 3-9, 2013)
 
 ### Choropleth Map
 An interactive choropleth web map of   
-- [Trip Origins](http://liachen.me/bsm_choropleth/)
+- [Trip Origins by county](http://liachen.me/bsm_choropleth/)
 
 ## Metadata
 _umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. 
