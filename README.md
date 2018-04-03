@@ -7,9 +7,21 @@
 A high-level look of the variables in these dataset is available [here](http://www-personal.umich.edu/~scunchen/Mcity/tree/).
 
 ## Data Nuggets
-[Documentation for Plymouth Intersection](PlymouthIntersection.md)  
-[Documentation for Stop Sign Intersection](StopSignIntersection.md)  
-The remaining data nuggets should have documentation within the folder itself
+Data nuggets are usually smaller datasets that are either:
+1. A subset of the main datasets (with the exception of video) that fulfill some criteria
+2. New dataset from another source
+
+Here is a list of them:
+- Close By Vehicle Pairs
+- Lane Change
+- Lane Following
+- Left Turn Signalized Intersections
+- Left Turn Time Series
+- [Plymouth Intersection Documentation](PlymouthIntersection.md) 
+- [Stop Sign Intersection Documentation](StopSignIntersection.md)
+- Traffic Flow Incidents
+
+The data nuggets without a link should have documentation within the folder itself.
 
 ## Example BSM Code
 This github page has some example Python code for analysis in a Jupyter Notebook.  
