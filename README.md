@@ -9,7 +9,7 @@ A high-level look of the variables in these dataset is available [here](http://w
 ## Data Nuggets
 Data nuggets are usually smaller datasets that are either:
 1. A subset of the main datasets (with the exception of video) that fulfill some criteria
-2. New dataset from another source
+2. A new dataset from another source
 
 Here is a list of them:
 - Close By Vehicle Pairs
