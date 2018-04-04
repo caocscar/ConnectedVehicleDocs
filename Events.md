@@ -117,7 +117,9 @@ Column Number|Name|Description|Units
 6|Value|state of all the vehicle's exterior lights|none  
 
 ### ExteriorLightsEvents Values
-Value|8-bit string|Condition|Detailed Description
+The entry in the `Value` field is based on the conversion of that entry from an 8-bit string.
+
+Decimal Value|8-bit string|Condition|Detailed Description
 :---:|---|---|---
 0|00000000|allLightsOff|All exterior lights are off
 1|00000001|lowBeamHeadLightsOn|Low beam headlights are on
