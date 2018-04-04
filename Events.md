@@ -116,7 +116,7 @@ Column Number|Name|Description|Units
 5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
 6|Value|state of all the vehicle's exterior lights|none  
 
-### ExteriorLightsEvents Value
+### ExteriorLightsEvents Values
 Value|8-bit string|Condition|Detailed Description
 :---:|---|---|---
 0|00000000|allLightsOff|All exterior lights are off
@@ -128,7 +128,9 @@ Value|8-bit string|Condition|Detailed Description
 16|00010000|automaticLightControlOn|Lights are on due to automatic light control
 32|00100000|daytimeRunningLightsOn|Day time running lights are on
 64|01000000|fogLightOn|Fog lights are on
-128|10000000|parkingLightsOn|Parking lights are on
+128*|10000000|parkingLightsOn|Parking lights are on
+
+\*Value does not exist in the dataset
 
 ## SteerAngleEvents
 The `SteerAngleEvents.csv` file communicates the angle of the steering wheel, expressed in a signed (to the right being positive) value with units of 1.5. 
