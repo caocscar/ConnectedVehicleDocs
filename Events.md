@@ -148,7 +148,7 @@ However for value between 129 and 255, maskoff the highest bit (which is being u
 Then swap the remaining bit values by doing a bitwise exclusive OR with a value of 127 and then multiply by -1.5.
 
 ## ThrottlePositionEvents
-The `ThrottlePositionEvents.csv` file presents the relative position of the throttle over a given trip. Throttle position is measured in percent, communicating the displacement of the throttle from its default position to it maximum displacement during a particular trip. 
+The `ThrottlePositionEvents.csv` file presents the relative position of the throttle. Throttle position is measured in percent, communicating the displacement of the throttle from its default position to it maximum displacement. 
 
 ### Variables
 Column Number|Name|Description|Units
