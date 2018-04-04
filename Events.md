@@ -86,22 +86,22 @@ The entry in the `Value` field is based on the conversion of that entry from an 
 3. Bits five and six (0000**00**00) communicates whether BrakeBoost (BB) in being applied. BrakeBoost is a part of a system that detects the potential of a situation in which maximum brake power will be required and pre-charges the brake system even before the driver depresses the brake pedal. The application of the BrakeBoost indicates a situation that warrants emergency braking. Note, not all vehicles are equipped with BrakeBoost capability.
 4. The last two bits (000000**00**) present the state of the auxiliary brake system. The auxiliary brake system is often called the parking brake.
 
-8-bit string|Condition|Detailed Description
----|---|---
-**00**000000|ABS is unavailable|a vehicle is not equipped with ABS/ABS is unavailable
-**01**000000|ABS is off|ABS is available but in the off position 
-**10**000000|ABS is on|ABS is on but not engaged
-**11**000000|ABS is engaged|ABS is on and engaged
-00**00**0000|SCU is unavailable|a vehicle is not equipped with a SCU/SCU is unavailable
-00**01**0000|SCU is off|ABS is in the off position
-00**10**0000|SCU is on|ABS is on or engaged
-0000**00**00|BB is unavailable|a vehicle is not equipped with a BB/BB is unavailable
-0000**01**00|BB is off|BB is in the off position 
-0000**10**00|BB is on|BB is on/is being applied 
-000000**00**|AuxB is unavailable|vehicle is not equipped with AuxB/AuxB is unavailable
-000000**01**|AuxB is off|AuxB is in the off position
-000000**10**|AuxB is on|AuxB is on/active
-000000**11**|BB is reserved|
+Decimal Value|8-bit string|Condition|Detailed Description
+:---:|---|---|---
+0|**00**000000|ABS is unavailable|a vehicle is not equipped with ABS/ABS is unavailable
+64|**01**000000|ABS is off|ABS is available but in the off position 
+128|**10**000000|ABS is on|ABS is on but not engaged
+192|**11**000000|ABS is engaged|ABS is on and engaged
+0|00**00**0000|SCU is unavailable|a vehicle is not equipped with a SCU/SCU is unavailable
+16|00**01**0000|SCU is off|ABS is in the off position
+32|00**10**0000|SCU is on|ABS is on or engaged
+0|0000**00**00|BB is unavailable|a vehicle is not equipped with a BB/BB is unavailable
+4|0000**01**00|BB is off|BB is in the off position 
+8|0000**10**00|BB is on|BB is on/is being applied 
+0|000000**00**|AuxB is unavailable|vehicle is not equipped with AuxB/AuxB is unavailable
+1|000000**01**|AuxB is off|AuxB is in the off position
+2|000000**10**|AuxB is on|AuxB is on/active
+3|000000**11**|BB is reserved|
 
 ## ExteriorLightsEvents
 The `ExteriorLightEvents.csv` file communicates the state of all the vehicle’s exterior lights.
