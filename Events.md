@@ -161,7 +161,7 @@ Column Number|Name|Description|Units
 6|Value|relative position of the throttle|percent
 
 ## WiperStatusFrontEvents
-The `WiperStatusFrontEvents.csv` file is intended to communicate whether it is raining or snowing at the vehicle’s current location and how hard it is raining it is raining or snowing. If the wipers are in the *On* position, it serves as a proxy for whether or not it is raining or snowing. The wipers’ *swipes per minute* also serves as a proxy for how hard it is raining or snowing.
+The `WiperStatusFrontEvents.csv` file is intended to communicate whether it is raining or snowing at the vehicle’s current location and how hard the precipitation is. If the wipers are in the *On* position, it serves as a proxy for whether or not it is raining or snowing. The wipers’ *swipes per minute* serves as a proxy for how hard it is raining or snowing.
 
 ### Variables
 Column Number|Name|Description|Units
@@ -171,9 +171,9 @@ Column Number|Name|Description|Units
 3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
 4|StartTme|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
 5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
-6|Value|front wiper status code|degrees
+6|Value|front wiper status code|none
 
-### WiperStatusFrontEvents Value
+### WiperStatusFrontEvents Values
 Value|Condition|Detailed Description
 :---:|---|---
 0|Unavailable|The status of the vehicle wiper is unavailable or the vehicle is not equipped with the wiper sensor status
