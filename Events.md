@@ -56,7 +56,18 @@ The `BrakeByte2Events.csv` file communicates the state of some of the component 
 3. the application of the brake boost
 4. the state of the auxiliary brake system.
 
-The meaning of an entry in the `Value` field is also based on the conversion of that entry into an 8-bit string. However this 8-bit string communicates the state of four brake-related components of a vehicle; each using two bits to present the status of the each component.
+### Variables
+Column Number|Name|Description|Units
+:---:|---|---|---
+1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+2|FileId|unique number assigned to each pcap file|none  
+3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+4|StartTme|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
+5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
+6|Value|vehicle's brake system state|none  
+
+### BrakeByte2Events Value
+The entry in the `Value` field is based on the conversion of that entry from an 8-bit string. This 8-bit string communicates the state of four brake-related components of a vehicle; each using two bits to present the status of the each component.
 
 1. The first two bits (**00**000000) pertain to the state of the vehicle’s antilock brake system (ABS).
 2. The next two bits (00**00**0000) pertain to state of the vehicle’s stability control unit (SCU).
@@ -83,6 +94,17 @@ The meaning of an entry in the `Value` field is also based on the conversion of 
 ## ExteriorLightsEvents
 The `ExteriorLightEvents.csv` file communicates the state of all the vehicle’s exterior lights.
 
+### Variables
+Column Number|Name|Description|Units
+:---:|---|---|---
+1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+2|FileId|unique number assigned to each pcap file|none  
+3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+4|StartTme|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
+5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
+6|Value|state of all the vehicle's exterior lights|none  
+
+### ExteriorLightsEvents Value
 8-bit string|Condition|Detailed Description
 ---|---|---
 00000000|allLightsOff|All exterior lights are off
@@ -99,7 +121,18 @@ The `ExteriorLightEvents.csv` file communicates the state of all the vehicle’s
 ## SteerAngleEvents
 The `SteerAngleEvents.csv` file communicates the angle of the steering wheel, expressed in a signed (to the right being positive) value with units of 1.5. 
 
-This field contains a value to be converted to degrees to communicate steer angle.  
+### Variables
+Column Number|Name|Description|Units
+:---:|---|---|---
+1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+2|FileId|unique number assigned to each pcap file|none  
+3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+4|StartTme|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
+5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
+6|Value|steering wheel angle|degrees
+
+### SteerAngleEvents Value
+The `Value` field contains an integer to be converted to degrees to communicate steer angle.  
 These values have to be converted before the steering wheel angle can be determined. 
 The LSB units = 1.5 degrees and entries in this field have a range of -126 to +127, 
 which facilitates steering angles between -/+189 degrees and a value signifying that the steering angle is unavailable.  
@@ -117,11 +150,30 @@ Then swap the remaining bit values by doing a bitwise exclusive OR with a value 
 ## ThrottlePositionEvents
 The `ThrottlePositionEvents.csv` file presents the relative position of the throttle over a given trip. Throttle position is measured in percent, communicating the displacement of the throttle from its default position to it maximum displacement during a particular trip. 
 
-This field details the relative position of the throttle over a given trip.
+### Variables
+Column Number|Name|Description|Units
+:---:|---|---|---
+1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+2|FileId|unique number assigned to each pcap file|none  
+3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+4|StartTme|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
+5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
+6|Value|relative position of the throttle|percent
 
 ## WiperStatusFrontEvents
 The `WiperStatusFrontEvents.csv` file is intended to communicate whether it is raining or snowing at the vehicle’s current location and how hard it is raining it is raining or snowing. If the wipers are in the *On* position, it serves as a proxy for whether or not it is raining or snowing. The wipers’ *swipes per minute* also serves as a proxy for how hard it is raining or snowing.
 
+### Variables
+Column Number|Name|Description|Units
+:---:|---|---|---
+1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+2|FileId|unique number assigned to each pcap file|none  
+3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+4|StartTme|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
+5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
+6|Value|front wiper status code|degrees
+
+### WiperStatusFrontEvents Value
 Value|Condition|Detailed Description
 :---:|---|---
 0|Unavailable|The status of the vehicle wiper is unavailable or the vehicle is not equipped with the wiper sensor status
