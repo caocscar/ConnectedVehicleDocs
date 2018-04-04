@@ -105,18 +105,18 @@ Column Number|Name|Description|Units
 6|Value|state of all the vehicle's exterior lights|none  
 
 ### ExteriorLightsEvents Value
-8-bit string|Condition|Detailed Description
----|---|---
-00000000|allLightsOff|All exterior lights are off
-00000001|lowBeamHeadLightsOn|Low beam headlights are on
-00000010|highBeamHeadLightsOn|High beam headlights are on
-00000100|leftTurnSiganlOn|Left turn signal is on
-00001000|righTurnSignalOn|Right turn signal is on
-00001100|hazardSignalOn|Hazard signal is on
-00010000|automaticLightControlOn|Lights are on due to automatic light control
-00100000|daytimeRunningLightsOn|Day time running lights are on
-01000000|fogLightOn|Fog lights are on
-10000000|parkingLightsOn|Parking lights are on
+Value|8-bit string|Condition|Detailed Description
+:---:|---|---|---
+0|00000000|allLightsOff|All exterior lights are off
+1|00000001|lowBeamHeadLightsOn|Low beam headlights are on
+2|00000010|highBeamHeadLightsOn|High beam headlights are on
+4|00000100|leftTurnSiganlOn|Left turn signal is on
+8|00001000|rightTurnSignalOn|Right turn signal is on
+12|00001100|hazardSignalOn|Hazard signal is on
+16|00010000|automaticLightControlOn|Lights are on due to automatic light control
+32|00100000|daytimeRunningLightsOn|Day time running lights are on
+64|01000000|fogLightOn|Fog lights are on
+128|10000000|parkingLightsOn|Parking lights are on
 
 ## SteerAngleEvents
 The `SteerAngleEvents.csv` file communicates the angle of the steering wheel, expressed in a signed (to the right being positive) value with units of 1.5. 
