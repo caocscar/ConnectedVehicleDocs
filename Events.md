@@ -31,7 +31,19 @@ Each event was filtered according to the de-identified BSM transmitted dataset. 
 The total size of the dataset is about 8.0 GB (uncompressed).
 
 ## BsmEventFlag
-The `BsmEventFlag.csv` file contains *flagged events*, which are defined as the occurrence of unusual events. The events logged in this file are communicated through the vehicle’s CAN bus, from the vehicle component that initiated the event, to the onboard WSU; which then transmits the message. Once the host vehicle generates and transmits an unusual event, the vehicle receiving this information will in turn process it and produce actions(s) that corresponds to the unusual event. These unusual events range from a vehicle’s hazard lights being on to a vehicle’s airbag being deployed. There are 13 events defined for the BsmEventFlag file. These events are represented as an enumerated value within the file. 
+The `BsmEventFlag.csv` file contains *flagged events*, which are defined as the occurrence of unusual events. The events logged in this file are communicated through the vehicle’s CAN bus, from the vehicle component that initiated the event, to the onboard WSU; which then transmits the message. Once the host vehicle generates and transmits an unusual event, the vehicle receiving this information will in turn process it and produce actions(s) that corresponds to the unusual event. These unusual events range from a vehicle’s hazard lights being on to a vehicle’s airbag being deployed. 
+
+### Variables
+Column Number|Name|Description|Units
+:---:|---|---|---
+1|RxDevice|receiving Device Id (For VADs this is the same as TxDevice); equivalent to VehicleID|none  
+2|FileId|unique number assigned to each pcap file|none  
+3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
+4|Gentime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
+5|Value|vehicle's brake system state|none
+
+### BsmEventFlag Value
+There are 13 events defined for the BsmEventFlag file. These events are represented as an enumerated value within the file. 
 
 Value|Name|Description
 :---:|---|---
