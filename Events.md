@@ -181,8 +181,10 @@ Value|Condition|Detailed Description
 2|Intermittent|Front wipers are operated at an intermittent frequency
 3|Low|Front wipers are operated at a low frequency
 4|High|Front wipers are operated at a high frequency
-126|Washer in Use|Wipers are active due to the use of the washer fluid
-127|Automatic Present|The wipers have the ability to be automatically turned on
+126*|Washer in Use|Wipers are active due to the use of the washer fluid
+127*|Automatic Present|The wipers have the ability to be automatically turned on
+
+\*Value does not exist in the dataset
 
 ## Reference
 The documentation was taken from this [Data.Transportation.gov Word document](https://data.transportation.gov/api/views/a7qq-9vfe/files/2bf7d0d1-5bdf-4342-82b2-0c84a58149ff)
