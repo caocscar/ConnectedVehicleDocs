@@ -31,7 +31,7 @@ Each event was filtered according to the de-identified BSM transmitted dataset. 
 The total size of the dataset is about 8.0 GB (uncompressed).
 
 ## BsmEventFlag
-The `BsmEventFlag.csv` file contains *flagged events*, which are defined as the occurrence of unusual events. The events logged in this file are communicated through the vehicle’s CAN bus, from the vehicle component that initiated the event, to the onboard WSU; which then transmits the message. Once the host vehicle generates and transmits an unusual event, the vehicle receiving this information will in turn process it and produce actions(s) that corresponds to the unusual event. These unusual events range from a vehicle’s hazard lights being on to a vehicle’s airbag being deployed. 
+The `BsmEventFlag.csv` file contains *flagged events*, which are defined as the occurrence of unusual events. The events logged in this file are communicated through the vehicle’s CAN bus, from the vehicle component that initiated the event, to the onboard WSU; which then transmits the message. Once the host vehicle generates and transmits an unusual event, the receiving vehicle willl process this information and produce actions(s) that corresponds to the unusual event. These unusual events range from a vehicle’s hazard lights being on to a vehicle’s airbag being deployed.
 
 ### Variables
 Column Number|Name|Description|Units
@@ -40,10 +40,10 @@ Column Number|Name|Description|Units
 2|FileId|unique number assigned to each pcap file|none  
 3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
 4|Gentime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
-5|Value|vehicle's brake system state|none
+5|Value|event code|none
 
-### BsmEventFlag Value
-There are 13 events defined for the BsmEventFlag file. These events are represented as an enumerated value within the file. 
+### BsmEventFlag Values
+There are 13 events defined for the BsmEventFlag file.
 
 Value|Name|Description
 :---:|---|---
@@ -148,20 +148,12 @@ Column Number|Name|Description|Units
 6|Value|steering wheel angle|degrees
 
 ### SteerAngleEvents Value
-The `Value` field contains an integer to be converted to degrees to communicate steer angle.  
-These values have to be converted before the steering wheel angle can be determined. 
-The LSB units = 1.5 degrees and entries in this field have a range of -126 to +127, 
-which facilitates steering angles between -/+189 degrees and a value signifying that the steering angle is unavailable.  
+The `Value` field contains an 8-bit unsigned integer that can be converted to steering angle degree.  
+The least significant bit (LSB) units = 1.5 degrees and entries in this field have a range [0, 255].
 
-For example:
-- 0 = +1.5 degrees
-- -126 = -189 degrees and beyond
-- +126 = +189 degrees and beyond
-- +127 = unavailable steering angle
-
-More generally, for values between 0 and 126 you simply multiply by 1.5 degrees.
-However for value between 129 and 255, maskoff the highest bit (which is being used as a sign bit) by doing a bitwise AND with a value of 127.
-Then swap the remaining bit values by doing a bitwise exclusive OR with a value of 127 and then multiply by -1.5.
+#### Converting to Steering Angle (Degrees)
+- For values between 0 and 126, simply multiply by 1.5 degrees. 
+- For values between 129 and 255, mask off the highest bit (which is being used as a sign bit) by doing a bitwise AND with a value of 127. Then swap the remaining bit values by doing a bitwise exclusive OR with a value of 127 and then multiply by -1.5.
 
 ## ThrottlePositionEvents
 The `ThrottlePositionEvents.csv` file presents the relative position of the throttle. Throttle position is measured in percent, communicating the displacement of the throttle from its default position to it maximum displacement. 
