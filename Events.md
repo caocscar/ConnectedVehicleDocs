@@ -42,7 +42,7 @@ Column Number|Name|Description|Units
 4|Gentime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
 5|Value|event code|none
 
-### BsmEventFlag Values
+### BsmEventFlag Value
 The entry in the `Value` field defines one of the 13 events for BsmEventFlag. There can be more than one event represented.
 
 Decimal Value|Name|Description
@@ -116,7 +116,7 @@ Column Number|Name|Description|Units
 5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
 6|Value|state of all the vehicle's exterior lights|none  
 
-### ExteriorLightsEvents Values
+### ExteriorLightsEvents Value
 The entry in the `Value` field is based on the conversion of that entry from an 8-bit string.
 
 Decimal Value|8-bit string|Condition|Detailed Description
@@ -182,7 +182,7 @@ Column Number|Name|Description|Units
 5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
 6|Value|front wiper status code|none
 
-### WiperStatusFrontEvents Values
+### WiperStatusFrontEvents Value
 Value|Condition|Detailed Description
 :---:|---|---
 0|Unavailable|The status of the vehicle wiper is unavailable or the vehicle is not equipped with the wiper sensor status
