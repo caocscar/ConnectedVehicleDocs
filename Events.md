@@ -148,11 +148,11 @@ Column Number|Name|Description|Units
 6|Value|8-bit representation of steering wheel angle|none
 
 ### SteerAngleEvents Value
-The entry in the `Value` field contains an 8-bit unsigned integer that can be converted to steering angle degree. The least significant bit (LSB) units = 1.5 degrees and entries in this field have a range [0, 255].
+The entry in the `Value` field contains an 8-bit unsigned integer that can be converted to steering angle degree. The least significant bit (LSB) units = 1.5 degrees and entries in this field have a range [0,255].
 
 #### Converting to Steering Angle (Degrees)
 - For values between 0 and 126, simply multiply by 1.5 degrees. 
-- For values between 129 and 255, mask off the highest bit (which is being used as a sign bit) by doing a bitwise AND with a value of 127. Then swap the remaining bit values by doing a bitwise exclusive OR with a value of 127 and then multiply by -1.5.
+- For values between 129 and 255, mask off the highest bit (which is being used as a sign bit) by doing a bitwise AND with a value of 127. Then swap the remaining bit values by doing a bitwise XOR with a value of 127 and then multiply by -1.5.
 
 **Note**: Positive/Negative signed integer means right/left respectively. 
 
