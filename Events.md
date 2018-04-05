@@ -56,7 +56,7 @@ Decimal Value|Name|Description
 32|eventEmergencyResponse|An authorized public safety vehicle is engaged in a service call and is currently moving (lights and sirens may not be evident)
 64|eventHardBraking|The vehicle has decelerated or is decelerating at a rate of greater than 0.4g
 128|eventLightsChanged|The external lighting (headlights, park lights) of the vehicle has changed recently
-256*|eventWipersChanged|Status of the front of rear wipers of the vehicle has changed recently
+256*|eventWipersChanged|Status of the front or rear wipers of the vehicle has changed recently
 512*|eventFlatTire|The vehicle has determined that at least one tire has run flat
 1024*|eventDisabledVehicle|Vehicle declaring itself as a disabled vehicle
 4096*|eventAirBagDeployment|At least one airbag has been deployed
