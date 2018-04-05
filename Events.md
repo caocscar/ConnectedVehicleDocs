@@ -145,7 +145,7 @@ Column Number|Name|Description|Units
 3|TxDevice|sending Device Id (static 2 bytes of the BSM 4 byte temporary Id)|none  
 4|StartTme|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
 5|EndTime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds 
-6|Value|steering wheel angle|degrees
+6|Value|8-bit representation of steering wheel angle|none
 
 ### SteerAngleEvents Value
 The entry in the `Value` field contains an 8-bit unsigned integer that can be converted to steering angle degree. The least significant bit (LSB) units = 1.5 degrees and entries in this field have a range [0, 255].
