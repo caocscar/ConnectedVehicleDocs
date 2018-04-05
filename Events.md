@@ -43,9 +43,9 @@ Column Number|Name|Description|Units
 5|Value|event code|none
 
 ### BsmEventFlag Values
-There are 13 events defined for the BsmEventFlag file.
+The entry in the `Value` field defines one of the 13 events for BsmEventFlag. There can be more than one event represented.
 
-Value|Name|Description
+Decimal Value|Name|Description
 :---:|---|---
 0|eventHazardLights|Hazard lights activated
 1|eventStopLineViolation|A vehicle anticipates passing the stop line at an intersection without coming to a full stop before reaching it
@@ -148,8 +148,7 @@ Column Number|Name|Description|Units
 6|Value|steering wheel angle|degrees
 
 ### SteerAngleEvents Value
-The `Value` field contains an 8-bit unsigned integer that can be converted to steering angle degree.  
-The least significant bit (LSB) units = 1.5 degrees and entries in this field have a range [0, 255].
+The entry in the `Value` field contains an 8-bit unsigned integer that can be converted to steering angle degree. The least significant bit (LSB) units = 1.5 degrees and entries in this field have a range [0, 255].
 
 #### Converting to Steering Angle (Degrees)
 - For values between 0 and 126, simply multiply by 1.5 degrees. 
