@@ -135,7 +135,7 @@ Decimal Value|8-bit string|Condition|Detailed Description
 \*Value does not exist in the dataset
 
 ## SteerAngleEvents
-The `SteerAngleEvents.csv` file communicates the angle of the steering wheel, expressed in a signed (to the right being positive) value with units of 1.5. 
+The `SteerAngleEvents.csv` file communicates the angle of the steering wheel.
 
 ### Variables
 Column Number|Name|Description|Units
@@ -153,6 +153,8 @@ The entry in the `Value` field contains an 8-bit unsigned integer that can be co
 #### Converting to Steering Angle (Degrees)
 - For values between 0 and 126, simply multiply by 1.5 degrees. 
 - For values between 129 and 255, mask off the highest bit (which is being used as a sign bit) by doing a bitwise AND with a value of 127. Then swap the remaining bit values by doing a bitwise exclusive OR with a value of 127 and then multiply by -1.5.
+
+**Note**: Positive/Negative signed integer means right/left respectively. 
 
 ## ThrottlePositionEvents
 The `ThrottlePositionEvents.csv` file presents the relative position of the throttle. Throttle position is measured in percent, communicating the displacement of the throttle from its default position to it maximum displacement. 
