@@ -41,7 +41,7 @@ Column Number|Name|Description|Units
 1|RxDevice|SPaT Id|none  
 2|FileId|unique number assigned to each pcap file|none  
 3|TxDevice|Another SPaT Id|none
-4|MsgCount|SPaT message count|none
+4|MsgCount|SPaT message count (restarts with new pcap file)|none
 5|LaneId|lane number|none
 6|Movement|indicates the beginning of a movement description|none
 7|State|current state of a particular known movement|none
