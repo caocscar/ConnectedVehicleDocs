@@ -2,25 +2,33 @@
 
 ## Summary
 This document describes the UMTRI Signal, Phase and Timing (SPaT) filtered dataset that is available on Flux through Globus Connect.
-The data represents the SPaT messages that are transmitted by Roadside Equipment (RSE) devices in the Plymouth corridor.
+The data represents the SPaT messages that are transmitted by Roadside Equipment (RSE) devices in the Plymouth Road corridor.
 
 RxDevice|Location
 ---|---
 18010|Plymouth and Barton
+18012|Plymouth and Traverwood
 18013|Plymouth and Nixon
 18014|Plymouth and Huron Parkway
 18015|Plymouth and Green
-18016|Plymouth and Murfin
+18022|Plymouth and Murfin
 
 Category|Value
 ---|---
-RxDevices|5
+RxDevices|6
 Date Range|2015-03-14 to 2016-12-31 (Note: There is no data available earlier in 2015)
 
 ## Data Filtering
 No filtering has bee done to the dataset with the exception of choice of RSE devices.
 
 **Note**: For space considerations, not all available SPaT messages were uploaded to the Safety Pilot Database.
+
+## File Content Description
+Each file is comma delimited.
+Files do not have any column headers.
+
+## File Naming Convention
+Files are organized based on the day and RxDevice. The top level folder(s) is named `TripStart\spat`. The files are labeled `TripStart_4####_180##.csv` where 4#### represents the TripStart day and 180## represents the RxDevice.
 
 ## Data Size
 The total size of the dataset is about 1.0 TB (uncompressed).
@@ -34,15 +42,15 @@ Column Number|Name|Description|Units
 2|FileId|unique number assigned to each pcap file|none  
 3|TxDevice|Another SPaT Id|none
 4|MsgCount|SPaT message count|none
-5|LaneId||none
-6|Movement||none
-7|State||none
-8|MinTR||seconds  
-9|MaxTR||seconds
-10|YellowState|
-11|YellowTime|
-12|PedDect|
-13|PedVehCount|
+5|LaneId|lane number|none
+6|Movement|indicates the beginning of a movement description|none
+7|State|current state of a particular known movement|none
+8|MinTR|minimum guaranteed amount of time remaining before the signal phase will change to the next phase|tenths of a second
+9|MaxTR|anticipated maximum time remaining before the signal phase is predicted to change to the next phase|tenths of a second
+10|YellowState|For motorized vehicle lanes, this object indicates next (yellow) signal state of all possible lights pertaining to a particular known movement after the current signal state expires. For pedestrian lanes, this data object indicates next active state of the crosswalk indicators for a particular known pedestrian movement.|none
+11|YellowTime|duration of yellow signal phase|none
+12|PedDect|possible presence of one or more pedestrians or other objects in the movements walk area|pedestrians
+13|PedVehCount|estimated count of vehicles or pedestrians within a predefined time period|vehicles or pedestrians
 
 **Note**: I do not know the reason for two SPaT Ids. 
-You would assume that they are always the same pairs in the dataset but you would be wrong.
+You would assume that the pairs of IDs do not have any other combinations in the dataset but you would be wrong.
