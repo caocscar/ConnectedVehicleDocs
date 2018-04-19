@@ -51,6 +51,7 @@ Column Number|Name|Description|Units
 11|YellowTime|duration of yellow signal phase|none
 12|PedDect|possible presence of one or more pedestrians or other objects in the movements walk area|pedestrians
 13|PedVehCount|estimated count of vehicles or pedestrians within a predefined time period|vehicles or pedestrians
+14|Gentime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds
 
 **Note**: I do not know the reason for two SPaT Ids. 
 You would assume that the pairs of IDs do not have any other combinations in the dataset but you would be wrong.
