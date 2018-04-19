@@ -28,7 +28,7 @@ Each file is comma delimited.
 Files do not have any column headers.
 
 ## File Naming Convention
-Files are organized based on the day and RxDevice. The top level folder(s) is named `TripStart\spat`. The files are labeled `TripStart_4####_180##.csv` where 4#### represents the TripStart day and 180## represents the RxDevice.
+Files are organized based on the day and RxDevice. The top level folder(s) is named `TripStart/spat`. The files are labeled `TripStart_4####_180##.csv` where 4#### represents the TripStart day and 180## represents the RxDevice.
 
 ## Data Size
 The total size of the dataset is about 1.0 TB (uncompressed).
@@ -55,3 +55,6 @@ Column Number|Name|Description|Units
 
 **Note**: I do not know the reason for two SPaT Ids. 
 You would assume that the pairs of IDs do not have any other combinations in the dataset but you would be wrong.
+
+## Reference
+Variable definitions were taken from the Word document `J2735_SPATblob_MAPblob_RevC_20120217.docx` in the `TripStart/spat/documentation` folder.
