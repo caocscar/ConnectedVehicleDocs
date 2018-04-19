@@ -19,9 +19,9 @@ RxDevices|6
 Date Range|2015-03-14 to 2016-12-31 (Note: There is no data available earlier in 2015)
 
 ## Data Filtering
-No filtering has bee done to the dataset with the exception of choice of RSE devices.
+No filtering has been done to the SPaT dataset with the exception of choice of RSE devices.
 
-**Note**: For space considerations, not all available SPaT messages were uploaded to the Safety Pilot Database.
+**Note**: Due to the amount of data, not all available SPaT messages were uploaded to the Safety Pilot Database.
 
 ## File Content Description
 Each file is comma delimited.
