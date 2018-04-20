@@ -31,7 +31,7 @@ Files do not have any column headers.
 Files are organized based on the day and RxDevice. The top level folder(s) is named `TripStart/spat`. The files are labeled `TripStart_4####_180##.csv` where 4#### represents the TripStart day and 180## represents the RxDevice.
 
 ## Data Size
-The total size of the dataset is about 1.0 TB (uncompressed).
+The total size of the dataset is about 1.2 TB (uncompressed).
 
 ## Variables
 The **first five columns** represent the composite primary keys for the dataset.  
