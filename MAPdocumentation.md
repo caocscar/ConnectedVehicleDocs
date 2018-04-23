@@ -81,3 +81,5 @@ Column Number|Name|Description|Units
 10|NodeEleOff|node elevation offset relative to the intersection reference point|cm
 11|NodeWidth|lane width at node location|cm
 
+## Coordinate Reference System
+GPS coordinates are in WGS84 or EPSG:4326
