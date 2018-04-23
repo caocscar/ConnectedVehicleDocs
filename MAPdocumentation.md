@@ -14,7 +14,7 @@ The total size of the dataset is 8 KB.
 
 ## MapMD
 Column Number|Name|Description|Units
----|---|---|---
+:---:|---|---|---
 1|RxDevice|Device Id of the RSE|none  
 2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
 3|TxDevice|Another RSE Device Id|none
@@ -27,55 +27,57 @@ Column Number|Name|Description|Units
 10|GenTimeRelOffset|
 11|Version|
 12|MessageAttr|
-13|Latitude|y-center of the intersection|degrees
-14|Longitude|x-center of the intersection|degrees
-15|Elevation|z-center of the intersection|decimeters
-16|AEBCount|number of approach lanes, egress lanes, barriers|none
+13|Latitude|y-reference point of intersection|degrees
+14|Longitude|x-reference point of intersection|degrees
+15|Elevation|z-reference point of intersection|
+16|AEBCount||
 
 ## AEB
 Column Number|Name|Description|Units
----|---|---|---
+:---:|---|---|---
 1|RxDevice|Device Id of the RSE|none  
 2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
 3|TxDevice|Another RSE Device Id|none
 4|MsgCount|MAP message count (restarts with new pcap file)|none
-5|AEBCount|number of approach lanes, egress lanes, barriers|none
-6|AEBType|1-approach, 2-egress, 3-barrier|none
+5|AEBCount||
+6|AEBType||
 7|LaneCount|Number of lanes in intersection|lanes
-8|PriPreLoad|
+8|PriPreLoad||
 
 ## Lane
-1|RxDevice|Device Id of the RSE|none  
+Column Number|Name|Description|Units
+:---:|---|---|---
+1|RxDevice|device Id of the RSE|none  
 2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
-3|TxDevice|Another RSE Device Id|none
+3|TxDevice|another RSE Device Id|none
 4|MsgCount|MAP message count (restarts with new pcap file)|none
 5|AEB|
-6|Lane|Lane Number
-7|LaneType|
-8|LaneId|
-9|LaneAttr|
-10|BarrierAttr|
-11|Width|
-12|ConnLaneId|
-13|ConnCode|
-14|RefLaneId|
-15|RefLatOffset|
+6|Lane|lane number|none
+7|LaneType|1-motorized vehicle lane, 2-computed lane, 3-pedestrian lane, 4-special purpose lane|none
+8|LaneId|lane Number (same as column 6)|none
+9|LaneAttr|unsigned 16-bit integer describing the lane attributes|none
+10|BarrierAttr|unsigned 16-bit integer describing the barrier attributes|none
+11|Width|lane or barrier width|cm
+12|ConnLaneId|lane id of a previously defined lane to which this lane connects|lane
+13|ConnCode|unsigned 8-bit integer describing the maneuver code|none
+14|RefLaneId|lane id of reference lane that a computed lane parallels|none
+15|RefLatOffset|signed 16-bit integer describing the lateral offset of reference lane|cm
 16|NodeLoad|
-17|NodeAttr|
-18|NodeNumOfPts|
+17|NodeAttr|unsigned 8-bit integer describing the node attributes|none
+18|NodeNumOfPts|Number of nodes in each lane|nodes
 
 ## Node
 Column Number|Name|Description|Units
----|---|---|---
-1|RxDevice|Device Id of the RSE|none  
+:---:|---|---|---
+1|RxDevice|device Id of the RSE|none  
 2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
-3|TxDevice|Another RSE Device Id|none
+3|TxDevice|another RSE Device Id|none
 4|MsgCount|MAP message count (restarts with new pcap file)|none
 5|AEB|
-6|Lane|Lane id
-7|Node|Node id
-8|NodeEastOff|
-9|NodeNorthOff|
-10|NodeEleOff|
-11|NodeWidth|
+6|Lane|lane id|none
+7|Node|node id|none
+8|NodeEastOff|node eastern offset relative to the intersection reference point|cm
+9|NodeNorthOff|node northern offset relative to the intersection reference point|cm
+10|NodeEleOff|node elevation offset relative to the intersection reference point|cm
+11|NodeWidth|lane width at node location|cm
 
