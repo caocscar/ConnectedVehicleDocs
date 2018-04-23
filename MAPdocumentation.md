@@ -12,12 +12,16 @@ Each file is comma delimited. Files do have column headers.
 ## Data Size
 The total size of the dataset is 8 KB.
 
-## MapMD
+## Variables
+
+### MapMD
+The **RxDevice** column represents the primary key for the dataset.
+
 Column Number|Name|Description|Units
 :---:|---|---|---
-1|RxDevice|Device Id of the RSE|none  
+1|RxDevice|device Id of the RSE|none  
 2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
-3|TxDevice|Another RSE Device Id|none
+3|TxDevice|another RSE Device Id|none
 4|Gentime|number of microseconds since Jan 1, 2004 (UTC +00:00)|microseconds  
 5|MsgCount|MAP message count (restarts with new pcap file)|none
 6|FrameOffset|
@@ -32,19 +36,23 @@ Column Number|Name|Description|Units
 15|Elevation|z-reference point of intersection|
 16|AEBCount||
 
-## AEB
+### AEB (Approach/Egress/Barrier)
+The **RxDevice** column represents the primary key for the dataset.
+
 Column Number|Name|Description|Units
 :---:|---|---|---
-1|RxDevice|Device Id of the RSE|none  
+1|RxDevice|device Id of the RSE|none  
 2|FileId|unique number assigned to each file; not the same FileId in the BSM dataset|none
-3|TxDevice|Another RSE Device Id|none
+3|TxDevice|another RSE Device Id|none
 4|MsgCount|MAP message count (restarts with new pcap file)|none
 5|AEBCount||
 6|AEBType||
 7|LaneCount|Number of lanes in intersection|lanes
 8|PriPreLoad||
 
-## Lane
+### Lane
+The **RxDevice** and **Lane** columns represents the composite primary keys for the dataset.
+
 Column Number|Name|Description|Units
 :---:|---|---|---
 1|RxDevice|device Id of the RSE|none  
@@ -66,7 +74,9 @@ Column Number|Name|Description|Units
 17|NodeAttr|unsigned 8-bit integer describing the node attributes|none
 18|NodeNumOfPts|Number of nodes in each lane|nodes
 
-## Node
+### Node
+The **RxDevice**, **Lane**, and **Node** columns represents the composite primary keys for the dataset.
+
 Column Number|Name|Description|Units
 :---:|---|---|---
 1|RxDevice|device Id of the RSE|none  
