@@ -1,7 +1,7 @@
 # Signal, Phase and Timing Documentation for Connected Vehicle Dataset
 
 ## Summary
-This document describes the UMTRI Signal, Phase and Timing (SPaT) filtered dataset that is available on Flux through Globus Connect for 2015-2016.
+This document describes the UMTRI Signal, Phase and Timing (SPaT) dataset that is available on Flux through Globus Connect for 2015-2016.
 The data represents the SPaT messages that are transmitted by Roadside Equipment (RSE) devices in the Plymouth Road corridor.
 
 RxDevice|Location
@@ -19,7 +19,7 @@ RxDevices|6
 Date Range|2015-03-14 to 2016-12-31 (Note: There is no data available earlier in 2015)
 
 ## Data Filtering
-No filtering has been done to the SPaT dataset with the exception of choice of RSE devices.
+No filtering has been done to the SPaT messages. 
 
 **Note**: Due to the amount of data, not all available SPaT messages were uploaded to the Safety Pilot Database.
 
