@@ -4,14 +4,14 @@
 This document describes the UMTRI Signal, Phase and Timing (SPaT) dataset that is available on Flux through Globus Connect for 2015-2016.
 The data represents the SPaT messages that are transmitted by Roadside Equipment (RSE) devices in the Plymouth Road corridor.
 
-RxDevice|Location
----|---
-18010|Plymouth and Barton
-18012|Plymouth and Traverwood
-18013|Plymouth and Nixon
-18014|Plymouth and Huron Parkway
-18015|Plymouth and Green
-18022|Plymouth and Murfin
+RxDevice|Location|MAP Data Available
+---|---|---
+18010|Plymouth and Barton|No except MapMD
+18012|Plymouth and Traverwood|Yes
+18013|Plymouth and Nixon|Yes
+18014|Plymouth and Huron Parkway|Yes
+18015|Plymouth and Green|Yes
+18022|Plymouth and Murfin|No except MapMD
 
 Category|Value
 ---|---
