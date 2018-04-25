@@ -88,7 +88,7 @@ Column Number|Name|Description|Units
 17|NodeAttr|unsigned 8-bit integer describing the node attributes|none
 18|NodeNumOfPts|Number of nodes in each lane|nodes
 
-\*Enumerated values for these columns can be found in the reference documentation mentioned below. 
+\*Bit values for these columns can be found in the reference documentation mentioned below. 
 
 ### Node
 The **RxDevice**, **Lane**, and **Node** columns represents the composite primary keys for the dataset.
