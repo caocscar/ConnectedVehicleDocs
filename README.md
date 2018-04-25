@@ -3,7 +3,8 @@
 [Documentation for transmitted Basic Safety Message (BSM)](BSMdocumentation.md)  
 [Documentation for received (Rx) Basic Safety Message (BSM)](BSMRxdocumentation.md)  
 [Documentation for Roadside Equipment (RSE)](RSEdocumentation.md)  
-[Documentation for Signal, Phase and Timing (SPaT) Messages](SPaTdocumentation.md)
+[Documentation for Signal, Phase and Timing (SPaT) Messages](SPaTdocumentation.md)  
+[Documentation for MAP Messages](MAPdocumentation.md)
 
 A high-level look of the variables in these dataset is available [here](http://www-personal.umich.edu/~scunchen/Mcity/tree/).
 
