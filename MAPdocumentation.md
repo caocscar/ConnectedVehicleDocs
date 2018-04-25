@@ -5,6 +5,17 @@ This document describes the UMTRI MAP dataset that is available on Flux through 
 
 Since MAP messages do not change (since intersection geometry is constant barring significant construction), the dataset only contains a single instance of that message to reduce redundancy.
 
+The table represents the MAP messages available that are transmitted by Roadside Equipment (RSE) devices in the Plymouth Road corridor.
+
+RxDevice|Location|MapMD|AEB|Lane|Node
+---|---|:---:|:---:|:---:|:---:
+18010|Plymouth and Barton|Yes|No|No|No
+18012|Plymouth and Traverwood|Yes|Yes|Yes|Yes
+18013|Plymouth and Nixon|Yes|Yes|Yes|Yes
+18014|Plymouth and Huron Parkway|Yes|Yes|Yes|Yes
+18015|Plymouth and Green|Yes|Yes|Yes|Yes
+18022|Plymouth and Murfin|Yes|No|No|No
+
 ## Data Filtering
 No filtering has been done to MAP messages. 
 
