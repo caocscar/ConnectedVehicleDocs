@@ -93,3 +93,6 @@ Column Number|Name|Description|Units
 
 ## Coordinate Reference System
 GPS coordinates are in WGS84 or EPSG:4326
+
+## Reference
+Variable definitions were taken from the Word document `J2735_SPATblob_MAPblob_RevC_20120217.docx` in the `TripStart/map/documentation` folder.
