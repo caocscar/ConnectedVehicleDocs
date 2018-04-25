@@ -26,7 +26,7 @@ Each file is comma delimited. Files do have column headers.
 The total size of the dataset is 8 KB.
 
 ## Variables
-Here is the variable definitions for the four MAP type files.
+Here is the variable definitions for the four MAP data files.
 
 ### MapMD
 The **RxDevice** column represents the primary key for the dataset.
