@@ -1,7 +1,9 @@
 # MAP Documentation for Connected Vehicle Dataset
 
 ## Summary
-This document describes the UMTRI MAP dataset that is available on Flux through Globus Connect. The data represents the MAP messages used to provide intersection and roadway lane geometry data for one or more locations. Almost all roadway geometry information as well as roadway attributes (such as where a do not block region exists, or what maneuvers are legally allowed at a given point) is contained in the “generic lane” details of this message.  MAP messages are used in intersections to number and describe lane level details of each lane, while the SPAT message provides the current state of each signal head controlling the ability to stop/pass a given lane. Since MAP messages do not change (since intersection geometry is constant barring significant construction), the dataset only contains a single instance of that message to reduce redundancy.
+This document describes the UMTRI MAP dataset that is available on Flux through Globus Connect. The data represents the MAP messages used to provide intersection and roadway lane geometry data for one or more locations. Almost all roadway geometry information as well as roadway attributes (such as where a do not block region exists, or what maneuvers are legally allowed at a given point) is contained in the “generic lane” details of this message.  MAP messages are used in intersections to number and describe lane level details of each lane, while the SPAT message provides the current state of each signal head controlling the ability to stop/pass a given lane. 
+
+Since MAP messages do not change (since intersection geometry is constant barring significant construction), the dataset only contains a single instance of that message to reduce redundancy.
 
 ## Data Filtering
 No filtering has been done to MAP messages. 
