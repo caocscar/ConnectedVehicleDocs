@@ -1,5 +1,18 @@
 # MAP Documentation for Connected Vehicle Dataset
 
+## Table of Contents
+- [Summary](#summary)
+- [Data Filtering](#data-filtering)
+- [File Content Description](#file-content-description)
+- [Data Size](#data-size)
+- [Variables](#variables)
+  - [MapMD](#mapmd)
+  - [AEB (Approach/Egress/Barrier)](#aeb)
+  - [Lane](#lane)
+  - [Node](#node)
+- [Reference](#reference)
+- [Coordinate Reference System](#coordinate-reference-system)
+
 ## Summary
 This document describes the UMTRI MAP dataset that is available on Flux through Globus Connect. The data represents the MAP messages used to provide intersection and roadway lane geometry data for one or more locations. Almost all roadway geometry information as well as roadway attributes (such as where a do not block region exists, or what maneuvers are legally allowed at a given point) is contained in the “generic lane” details of this message.  MAP messages are used in intersections to number and describe lane level details of each lane, while the SPAT message provides the current state of each signal head controlling the ability to stop/pass a given lane. 
 
@@ -50,7 +63,7 @@ Column Number|Name|Description|Units
 15|Elevation|z-reference point of intersection|
 16|AEBCount||
 
-### AEB (Approach/Egress/Barrier)
+### AEB
 The **RxDevice** column represents the primary key for the dataset.
 
 Column Number|Name|Description|Units
