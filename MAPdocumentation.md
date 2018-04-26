@@ -36,7 +36,7 @@ No filtering has been done to MAP messages.
 Each file is comma delimited. Files do have column headers.
 
 ## Data Size
-The total size of the dataset is 8 KB.
+The total size of the dataset is a tiny 8 KB (see summary for reason).
 
 ## Variables
 Here is the variable definitions for the four MAP data files.
