@@ -1,8 +1,16 @@
 # Signal, Phase and Timing Documentation for Connected Vehicle Dataset
 
+## Table of Contents
+- [Summary](#summary)
+- [Data Filtering](#data-filtering)
+- [File Content Description](#file-content-description)
+- [Folder/File Naming Convention](#folder-and-file-naming-convention)
+- [Data Size](#data-size)
+- [Variables](#variables)
+- [Reference](#reference)
+
 ## Summary
-This document describes the UMTRI Signal, Phase and Timing (SPaT) dataset that is available on Flux through Globus Connect for 2015-2016.
-The data represents the SPaT messages that are transmitted by Roadside Equipment (RSE) devices in the Plymouth Road corridor.
+This document describes the UMTRI Signal, Phase and Timing (SPaT) dataset that is available on Flux through Globus Connect for 2015-2016. The data represents the SPaT messages that are transmitted by Roadside Equipment (RSE) devices in the Plymouth Road corridor.
 
 RxDevice|Location|MAP Data Available
 ---|---|---
@@ -27,8 +35,8 @@ No filtering has been done to the SPaT messages.
 Each file is comma delimited.
 Files do not have any column headers.
 
-## File Naming Convention
-Files are organized based on the day and RxDevice. The top level folder(s) is named `TripStart/spat`. The files are labeled `TripStart_4####_180##.csv` where 4#### represents the TripStart day and 180## represents the RxDevice.
+## Folder and File Naming Convention
+Files are organized based on the day and RxDevice. The top level folder(s) is named `TripStart/spat`. The Year-Month sub-folders are labeled `YYYYMM`. The files are labeled `TripStart_4####_180##.csv` where 4#### represents the number of days since Dec. 30, 1899, and 180## represents the RxDevice. For example, TripStart_42077_18012.csv represents March 15, 2015 for the RSE at Plymouth and Traverwood.
 
 ## Data Size
 The total size of the dataset is about 1.2 TB (uncompressed).
