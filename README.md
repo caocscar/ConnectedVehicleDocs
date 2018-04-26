@@ -6,7 +6,7 @@
 [Documentation for Signal, Phase and Timing (SPaT) Messages](SPaTdocumentation.md)  
 [Documentation for MAP Messages](MAPdocumentation.md)
 
-A high-level look of the variables in these dataset is available [here](http://www-personal.umich.edu/~scunchen/Mcity/tree/).
+A high-level look at the variables in some of these dataset is available [here](http://www-personal.umich.edu/~scunchen/Mcity/tree/).
 
 ## Data Nuggets
 Data nuggets are usually smaller datasets that are either:
