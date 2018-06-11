@@ -22,7 +22,7 @@ Number of BSMs|3.5 billion
 Date Range|2012-08-08 to 2016-10-03
 
 ## Roadside Equipment
-_RseDevice.csv_ contains the location and description of each RSE.
+_RseDevice.csv_ contains the location and description of each RSE. The file is located in the `TripStart/rse/metadata` folder
 
 ## Data Filtering
 The dataset has been filtered according to the following guidelines:
