@@ -87,7 +87,7 @@ An interactive calendar of the data available in the BSM transmitted dataset
 
 ### Choropleth Map
 An interactive choropleth web map of   
-- [Trip Origins by county](http://liachen.me/bsm_choropleth/)
+- [Trip Origins by county](http://www-personal.umich.edu/~scunchen/Mcity/bsm_choropleth/)
 
 ## Metadata
 _umtri_bsm_metadata.csv_ is a file containing some summary statistics for each trip. 
