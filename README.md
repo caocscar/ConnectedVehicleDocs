@@ -23,7 +23,7 @@ Here is a list of them:
 - [Stop Sign Intersection Documentation](StopSignIntersection.md)
 - Traffic Flow Incidents
 
-The data nuggets without a link should have documentation within the folder itself.
+The data nuggets without a link should have documentation within the folder itself. They are located on `Turbo` in the folder `/nfs/turbo/SpBsmScrub/TripStart/datanuggets`. You have to login to [Great Lakes](https://arc-ts.umich.edu/greatlakes/user-guide/) or [Cavium](https://arc-ts.umich.edu/cavium/user-guide/) to view them. 
 
 ## Example BSM Code
 This github page has some example Python code for analysis in a Jupyter Notebook.  
